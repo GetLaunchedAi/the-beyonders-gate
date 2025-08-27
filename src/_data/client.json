@@ -1,15 +1,15 @@
 {
-  "name": "Michigan Fencing Solutions",
-  "email": "Richardsturd@gmail.com",
-  "phone": "269-615-8646",
-  "phoneFormatted": "(269) 615-8646",
+  "name": "The Beyonders Gate",
+  "email": "mazin@dynamiclifeway.com",
+  "phone": "2482298138",
+  "phoneFormatted": "(248) 229-8138",
   "address": {
-    "lineOne": "Kalamazoo, MI 49024, United States",
+    "lineOne": "",
     "lineTwo": "",
-    "city": "Kalamazoo",
-    "county": "Kalamazoo County",
-    "postcode": "49024",
-    "mapLink": "https://maps.app.goo.gl/Xj2fBuK1cVarKzdF6"
+    "city": "",
+    "county": "",
+    "postcode": "",
+    "mapLink": ""
   },
-  "domain": "puremichiganfencingsolutions.com"
+  "domain": "https://dynamiclifeway.com/"
 }
