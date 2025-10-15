@@ -30,6 +30,11 @@
   .dark {
     display: none;
   }
+
+  /* Dark mode cs-topper styling */
+  body.dark-mode .cs-topper {
+    color: var(--primaryShade);
+  }
 }
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->

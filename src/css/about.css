@@ -62,14 +62,13 @@
     max-width: 33.875rem;
   }
   #sbs .cs-topper {
-    font-size: var(--topperFontSize);
+    font-size: clamp(0.8125rem, 1.6vw, 1rem);
     line-height: 1.2em;
     text-transform: uppercase;
-    text-align: left;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     font-weight: 700;
     color: var(--primary);
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
     display: block;
   }
   #sbs .cs-title {
@@ -164,7 +163,7 @@
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
   }
   body.dark-mode #sbs .cs-topper {
-    color: var(--primaryLight);
+    color: var(--primaryShade);
   }
   body.dark-mode #sbs .cs-title,
   body.dark-mode #sbs .cs-text,
