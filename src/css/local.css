@@ -94,6 +94,17 @@
   #sbs .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
+  #sbs ul.cs-text {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+  #sbs ul.cs-text li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5em;
+  }
+  #sbs ul.cs-text li:last-child {
+    margin-bottom: 0;
+  }
   #sbs .cs-flex-group {
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);
@@ -277,6 +288,17 @@
   }
   #sbs-r .cs-text:last-of-type {
     margin-bottom: 2rem;
+  }
+  #sbs-r ul.cs-text {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+  #sbs-r ul.cs-text li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5em;
+  }
+  #sbs-r ul.cs-text li:last-child {
+    margin-bottom: 0;
   }
   #sbs-r .cs-flex-group {
     /* 16px - 32px */
