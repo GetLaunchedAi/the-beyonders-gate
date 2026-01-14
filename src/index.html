@@ -110,6 +110,298 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
+<!--              ORIENTATION SECTION             -->
+<!-- ============================================ -->
+
+<section id="orientation-section">
+  <div class="orientation-container">
+    <div class="orientation-content">
+      <div class="orientation-badge">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 10L20 30M10 20L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2 class="orientation-title">ORIENTATION SECTION — WHAT THIS IS</h2>
+      <div class="orientation-divider"></div>
+      <div class="orientation-text-block">
+        <p class="orientation-text">
+          There are moments in life when experience becomes heavier than explanation.
+        </p>
+        <p class="orientation-text">
+          When familiar patterns no longer work.
+        </p>
+        <p class="orientation-text">
+          When struggle, transition, or inner conflict can no longer be ignored or escaped.
+        </p>
+      </div>
+      <div class="orientation-highlight">
+        <span class="orientation-emphasis">Dynamic Life Way</span> exists for these moments.
+      </div>
+      <div class="orientation-text-block">
+        <p class="orientation-text">
+          This work is not about fixing what is broken or chasing constant positivity.
+        </p>
+        <p class="orientation-text">
+          It is about understanding what you are moving through — and learning how to face experience directly, without denial or illusion.
+        </p>
+      </div>
+      <div class="orientation-icon-row">
+        <div class="orientation-icon-item">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 8L16 16L22 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="orientation-icon-item">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M16 4L28 16L16 28L4 16L16 4Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="orientation-icon-item">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M8 16L14 22L24 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+#orientation-section {
+  padding: clamp(4rem, 10vw, 8rem) 1rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#orientation-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
+}
+
+#orientation-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
+}
+
+.orientation-container {
+  max-width: 65rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.orientation-content {
+  text-align: center;
+  padding: clamp(2rem, 5vw, 4rem);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.orientation-badge {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, #d4a574 100%);
+  color: white;
+  box-shadow: 0 10px 30px rgba(194, 147, 90, 0.3);
+}
+
+.orientation-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: var(--headerColor);
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.orientation-divider {
+  width: 6rem;
+  height: 0.25rem;
+  background: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
+  margin: 0 auto 2.5rem;
+}
+
+.orientation-text-block {
+  margin: 2.5rem 0;
+}
+
+.orientation-text {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.8;
+  color: var(--bodyTextColor);
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.orientation-highlight {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.6;
+  color: var(--headerColor);
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(194, 147, 90, 0.08);
+  border-left: 4px solid var(--primary);
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+.orientation-emphasis {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.orientation-icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.orientation-icon-item {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  color: var(--primary);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.orientation-icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(194, 147, 90, 0.2);
+}
+
+/* Dark mode support */
+body.dark-mode #orientation-section {
+  background: linear-gradient(135deg, var(--dark) 0%, #0a1929 100%) !important;
+}
+
+body.dark-mode #orientation-section::before,
+body.dark-mode #orientation-section::after {
+  background: linear-gradient(90deg, transparent 0%, var(--primaryShade) 50%, transparent 100%) !important;
+}
+
+body.dark-mode .orientation-content {
+  background: rgba(44, 57, 75, 0.6) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .orientation-title {
+  color: #f5f5f5 !important;
+}
+
+body.dark-mode .orientation-text {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+body.dark-mode .orientation-highlight {
+  color: #f5f5f5 !important;
+  background: rgba(194, 147, 90, 0.2) !important;
+  border-left-color: var(--primaryShade) !important;
+}
+
+body.dark-mode .orientation-emphasis {
+  color: #f0d8b8 !important;
+}
+
+body.dark-mode .orientation-icon-item {
+  background: var(--medium) !important;
+  color: #f0d8b8 !important;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  #orientation-section {
+    padding: 3rem 1rem;
+  }
+  
+  .orientation-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .orientation-badge {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .orientation-title {
+    margin-bottom: 1.5rem;
+  }
+  
+  .orientation-divider {
+    margin-bottom: 2rem;
+  }
+  
+  .orientation-text-block {
+    margin: 2rem 0;
+  }
+  
+  .orientation-highlight {
+    margin: 2rem 0;
+    padding: 1.5rem;
+  }
+  
+  .orientation-icon-row {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .orientation-icon-item {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .orientation-icon-item svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .orientation-text {
+    font-size: 1.0625rem;
+  }
+  
+  .orientation-highlight {
+    font-size: 1.125rem;
+  }
+  
+  .orientation-icon-row {
+    gap: 1.5rem;
+  }
+}
+</style>
+
+<!-- ============================================ -->
 <!--            Extra Content To Rank             -->
 <!-- ============================================ -->
 
