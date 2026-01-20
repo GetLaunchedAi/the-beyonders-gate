@@ -16,7 +16,8 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="hero">
-  <img src="/images/beyonder_gate_no_text_no_border.png" alt="Hero background" class="cs-picture" />
+  {% image './src/images/beyonder_gate_no_text_no_border.png', 'Hero background', 'cs-picture', 'eager',
+  '(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1920px'%}
   <div class="cs-overlay"></div>
   <div class="cs-container">
     <h1 class="cs-title">
@@ -31,7 +32,7 @@ eleventyNavigation:
     <p class="cs-text cs-text-right">
       The difference between an average man and the Beyonder is <em>experience</em>.
     </p>
-    <a href="/contact/" class="cs-button-solid">Enter the Way</a>
+    <a href="https://www.facebook.com/DynamicLifeWayCoaching" target="_blank" rel="noopener" class="cs-button-solid">Enter the Way</a>
   </div>
 </div>
 </section>
@@ -79,8 +80,8 @@ eleventyNavigation:
 
 <section id="sbs">
   <div class="cs-container">
-    <div class="cs-left">
-      {% image './src/images/about_img_0.png', 'life coaching session', 'cs-picture cs-picture1', 'lazy'%}
+    <div class="cs-left founder-photo">
+      {% image './src/images/mazin_gorgees_founder.png', 'Mazin Gorgees - Founder and Life Coach', 'cs-picture cs-picture1', 'lazy'%}
     </div>
     <div class="cs-right">
       <span class="cs-topper">About Us</span>
@@ -505,8 +506,8 @@ body.dark-mode .orientation-icon-item {
 
 <section id="sbs">
   <div class="cs-container">
-    <div class="cs-left">
-      {% image './src/images/about_img_0.png', 'The Beyonder - Spiritual Philosopher and Coach', 'cs-picture cs-picture1', 'lazy'%}
+    <div class="cs-left founder-photo">
+      {% image './src/images/mazin_gorgees_founder.png', 'Mazin Gorgees - The Beyonder - Spiritual Philosopher and Coach', 'cs-picture cs-picture1', 'lazy'%}
     </div>
     <div class="cs-right">
       <span class="cs-topper">Who Stands at the Gate</span>
@@ -606,6 +607,46 @@ body.dark-mode .orientation-icon-item {
   {% image './src/images/final_home_img.png', 'life coaching session', '', 'lazy',
   '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
+
+<style>
+/* Founder Photo Background Styling */
+.founder-photo {
+  position: relative;
+}
+
+.founder-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%),
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,.02) 10px, rgba(0,0,0,.02) 20px);
+  border-radius: 1.5em;
+  z-index: 0;
+}
+
+.founder-photo .cs-picture {
+  position: relative;
+  z-index: 1;
+}
+
+.founder-photo .cs-picture img {
+  mix-blend-mode: multiply;
+  filter: contrast(1.05) brightness(1.02);
+}
+
+/* Dark Mode Founder Photo Background */
+body.dark-mode .founder-photo::before {
+  background: 
+    linear-gradient(135deg, #2c394b 0%, #1e2a38 50%, #2c394b 100%),
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.03) 10px, rgba(255,255,255,.03) 20px);
+}
+
+body.dark-mode .founder-photo .cs-picture img {
+  mix-blend-mode: normal;
+  filter: contrast(1.05) brightness(1.05);
+}
+</style>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
