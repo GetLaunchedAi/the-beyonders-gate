@@ -63,15 +63,6 @@
     /* Remove the overlay - we don't need it */
     display: none;
   }
-  #hero .cs-picture video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes image act like a background-image */
-    object-fit: cover;
-  }
   #hero .cs-container {
     width: 100%;
     max-width: 80em;
@@ -99,16 +90,6 @@
     position: relative;
     z-index: 2;
     margin-top: auto;
-  }
-  #hero .cs-topper {
-    font-size: clamp(0.8125rem, 1.6vw, 1rem);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 1rem;
-    display: block;
   }
   #hero .cs-title {
     /* 39px - 61px */
@@ -177,6 +158,7 @@
     transition: all .3s ease;
     text-align: center;
     width: fit-content;
+    align-self: center;
   }
   #hero .cs-button-solid::after {
     /* Bottom glow effect */
@@ -212,51 +194,6 @@
   #hero .cs-button-solid:hover:before {
     width: 100%;
   }
-  #hero .cs-button-transparent {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    width: 11.25rem;
-    /* 46px - 56px */
-    height: clamp(2.875em, 5.5vw, 3.5em);
-    text-decoration: none;
-    font-weight: 700;
-    margin: 0 0.5rem;
-    color: #fff;
-    padding: 0;
-    background-color: transparent;
-    border: 1px solid var(--bodyTextColorWhite);
-    box-sizing: border-box;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-  }
-  #hero .cs-button-transparent:before {
-    content: '';
-    position: absolute;
-    display: block;
-    background: #000;
-    opacity: 1;
-    /* so it sits on top of the border */
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    z-index: -1;
-    transform-origin: left;
-    /* this is what creates the grow affect on hover */
-    transform: scaleX(0);
-    transition: transform .3s;
-  }
-  #hero .cs-button-transparent:hover:before {
-    transform: scaleX(1);
-  }
-  #hero .cs-button-transparent .cs-img {
-    display: block;
-    margin-right: 0.75rem;
-  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
@@ -287,6 +224,18 @@
   #hero .cs-container {
     padding: 4rem 1rem 2rem 1rem;
   }
+}
+/* Laptop - 1024px */
+@media only screen and (min-width: 64em) {
+  #hero {
+    min-height: 140vh;
+  }
+  #hero .cs-container:last-of-type {
+    transform: translateY(-10%);
+  }
+  #hero .cs-title {
+    transform: translateY(-5%);
+  }
   #hero .cs-text {
     white-space: nowrap;
   }
@@ -297,10 +246,13 @@
     margin-left: 8%;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #hero .cs-background:before {
-    opacity: .8;
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25em) {
+  #hero {
+    min-height: 150vh;
+  }
+  #hero .cs-title {
+    transform: translateY(-10%);
   }
 }
 /*-- -------------------------- -->
@@ -398,3 +350,4 @@
     font-weight: bold;
   }
 }
+
